@@ -1,7 +1,13 @@
+.body{
+  overflow: hidden;
+}
 .App {
   text-align: center;
+  width: 100%;
 }
-
+button{
+  cursor: pointer;
+}
 @keyframes App {
   from {
     transform: rotate(0deg);

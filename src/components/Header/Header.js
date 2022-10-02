@@ -1,6 +1,6 @@
 import React from 'react'
-import './styles.css'
-import image1 from './../assets/technology 1.png' 
+import './Header.css'
+import image1 from './../../assets/technology 1.png' 
 
 const Header = () => {
   return (

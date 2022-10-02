@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import './styles.css'
+import './Products.css'
 import axios from 'axios'
 
 
-const Products = () => {
+const Products = ({addToCart}) => {
   // const productItems = [
   //   {
   //     "id": 1,
@@ -64,11 +64,12 @@ const Products = () => {
     <div className='main-container'>
       <h1 className='products-header'>Products</h1>
       <div className='products-container'>
+        <div className='products-row'>
         {values.map((productItem) => (
           <div key={productItem.id} className='card'>
             <img width="100%" src={productItem.productImage} alt="logoImage" />
             <div className='container'>
-              <h4>{productItem.productName}</h4>
+              <h4>{productItem.productName.length > 40 ? productItem.productName.slice(0,38) + '...' : productItem.productName}</h4>
               <div className='product-data'>
                 <div className='ratings'>
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,11 +90,12 @@ const Products = () => {
                   <h2><span>{productItem.newPrice}</span>/-</h2>
                 </div>
               </div>
-              <button>ADD TO CART</button>
+              <button onClick={()=>addToCart(productItem.id)}>ADD TO CART</button>
             </div>
           </div>
           //  <h1>{productItem["id"]}</h1>
         ))}
+        </div>
       </div>
      </div>
   )
