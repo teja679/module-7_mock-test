@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/module-7_mock-test/static/css/main.c7e1d934.css",
+    "main.js": "/module-7_mock-test/static/js/main.b84878aa.js",
+    "static/media/technology 1.png": "/module-7_mock-test/static/media/technology 1.81612f0d13dcbcb90556.png",
+    "index.html": "/module-7_mock-test/index.html",
+    "main.c7e1d934.css.map": "/module-7_mock-test/static/css/main.c7e1d934.css.map",
+    "main.b84878aa.js.map": "/module-7_mock-test/static/js/main.b84878aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7e1d934.css",
+    "static/js/main.b84878aa.js"
+  ]
+}
